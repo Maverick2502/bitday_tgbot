@@ -63,6 +63,8 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	log.Println("The Bot is starting:" )
 	dsn := "postgres://app:pass@192.168.99.100:5424/db"
 	db, err := sql.Open("pgx", dsn)
 
@@ -82,6 +84,7 @@ func main() {
 	go server.NearBDHandler() // и тут дай бота и все
 	server.Init() // ВСЕГДА ВЫЗЫВАЙ ОБРАБОТЧИКОВ:
 	bot.ListenAndServe()
+
 
 
 
