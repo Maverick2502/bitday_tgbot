@@ -2,7 +2,7 @@ package app
 
 import (
 	"fmt"
-	"github.com/AzizRahimov/bithday_tg_bot/pkg/service"
+	"github.com/AzizRahimov/bitday_tgbot/pkg/service"
 	"github.com/yanzay/tbot"
 	"log"
 	"strconv"

@@ -1,4 +1,4 @@
-module github.com/AzizRahimov/bithday_tg_bot
+module github.com/AzizRahimov/bitday_tgbot
 
 go 1.16
 

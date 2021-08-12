@@ -3,8 +3,8 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"github.com/AzizRahimov/bithday_tg_bot/cmd/app"
-	"github.com/AzizRahimov/bithday_tg_bot/pkg/service"
+	"github.com/AzizRahimov/bitday_tgbot/cmd/app"
+	"github.com/AzizRahimov/bitday_tgbot/pkg/service"
 	_ "github.com/jackc/pgx/v4/stdlib"
 	"github.com/yanzay/tbot"
 	"log"
