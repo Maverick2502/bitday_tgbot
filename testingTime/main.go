@@ -5,27 +5,6 @@ import (
 	"time"
 )
 
-//func main() {
-//
-//	layout := "2006-01-02T15:04:05Z"
-//	//layout := "2021-01-02T00:00:00Z"
-//	//str := "2021-09-10T11:45:05Z"
-//	str := "2021-09-10T00:00:00Z"
-//	  //str := " 2021-09-10T00:00:00"
-//
-//	t, err := time.Parse(layout, str) //ну вот ты же меняешь формат
-//	newTime := t.Format("02-01-06")
-//
-//	fmt.Println(t.Month())
-//	fmt.Println(t.Year())
-//	fmt.Println(t.Day())
-//	fmt.Println(newTime)
-//
-//	if err != nil {
-//	fmt.Println(err)
-//	}
-//	fmt.Println(t)
-//}
 
 
 func main() {
