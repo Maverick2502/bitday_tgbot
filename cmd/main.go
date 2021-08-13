@@ -66,10 +66,16 @@ func main() {
 	//bot, err := tbot.NewServer("1903232530:AAFpzgWZ8j9hXFOs1u9fg2ePVCKgIrqgofo")
 	bot, err := tbot.NewServer("1912918677:AAHrMEawvWinS9Exi8OCZIKmIVpeet2nIiM")
 	//bot, err := tbot.NewServer("1912918677:AAHrMEawvWinS9Exi8OCZIKmIVpeet2nIiM",tbot.WithWebhook(url, addr) )
-
+	//tbot.NewServer("dasdas", We)
 	if err != nil {
 		log.Fatal(err)
 	}
+	port, ok := os.LookupEnv("PORT")
+	if !ok {
+		port = "9999"
+	}
+
+	log.Println(port)
 
 	log.Println("The Bot is starting:" )
 	//dsn := "postgres://app:pass@192.168.99.100:5424/db"
