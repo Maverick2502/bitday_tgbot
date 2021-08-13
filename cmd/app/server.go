@@ -107,14 +107,16 @@ func (s *Server) NearBDHandler() {
 			//	fmt.Println(newTime)
 			//
 			//	fmt.Println(t)
-			today := time.Now().AddDate(0, 0, +7)
+			today := time.Now().AddDate(0, 0, +6)
 			fmt.Println(t.Day(), "сегодня")
 			newName := ConvertName(value.Name)
-			day := string(today.Day())
+
+			day := fmt.Sprintf("%d", today.Day())
 
 			if today.Day() == t.Day() && today.Month() == t.Month() {
 
-				s.bot.Send(-1001267478076, "Через неделю " +  day + "числа у " + newName +" "+"день рождения! Удалите его из группы и начинаем готовиться!")
+				//s.bot.Send(-1001267478076, "Через неделю " +  day + "числа у " + newName +" "+"день рождения! Удалите его из группы и начинаем готовиться!")
+				s.bot.Send(484843300, "Через неделю " +  day + "числа у " + newName +" "+"день рождения! Удалите его из группы и начинаем готовиться!")
 
 			}
 
