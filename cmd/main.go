@@ -58,14 +58,23 @@ func sendingMessage(bot *tbot.Server) {
 
 
 func main() {
-///	bot, err := tbot.NewServer("1903232530:AAFpzgWZ8j9hXFOs1u9fg2ePVCKgIrqgofo")
+
+
+	//url := "https://some.url"
+	//addr := "0.0.0.0:8013"
+
+	//bot, err := tbot.NewServer("1903232530:AAFpzgWZ8j9hXFOs1u9fg2ePVCKgIrqgofo")
 	bot, err := tbot.NewServer("1912918677:AAHrMEawvWinS9Exi8OCZIKmIVpeet2nIiM")
+	//bot, err := tbot.NewServer("1912918677:AAHrMEawvWinS9Exi8OCZIKmIVpeet2nIiM",tbot.WithWebhook(url, addr) )
+
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	log.Println("The Bot is starting:" )
-	dsn := "postgres://app:pass@192.168.99.100:5424/db"
+	//dsn := "postgres://app:pass@192.168.99.100:5424/db"
+
+	dsn := "postgres://omvzgmcaylrqrq:0be0c5fa91fb6ff63b5d1c9872e0f388bcf233964d87d78c9fcd863fa51e9921@ec2-44-196-132-15.compute-1.amazonaws.com:5432/de1e4st8q72m0b"
 	db, err := sql.Open("pgx", dsn)
 
 	if err != nil {

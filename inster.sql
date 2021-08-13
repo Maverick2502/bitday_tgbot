@@ -42,7 +42,7 @@ INSERT INTO people(name, bdate)VALUES ('Аминчон', ' 2021-05-01') ;
 INSERT INTO people(name, bdate)VALUES ('Шамсия', ' 2021-05-15') ;
 INSERT INTO people(name, bdate)VALUES ('Михаил', ' 2021-06-17') ;
 INSERT INTO people(name, bdate)VALUES ('Тахмина', ' 2021-06-24') ;
-INSERT INTO people(name, bdate)VALUES ('Нафисабону', ' 2021-07-13');
+INSERT INTO people(name, bdate)VALUES ('Нафиса', ' 2021-07-13');
 INSERT INTO people(name, bdate)VALUES ('Садриддин', ' 2021-08-19');
 INSERT INTO people(name, bdate)VALUES ('Азиз', ' 2021-09-10');
 INSERT INTO people(name, bdate)VALUES ('Камила', ' 2021-09-11');

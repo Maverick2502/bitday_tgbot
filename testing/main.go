@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-
+	"time"
 )
 
 
@@ -63,6 +63,9 @@ func main() {
 
 	name := ConvertName("Махина")
 	fmt.Println(name, "Это конвертируемое имя")
+	today := time.Now().AddDate(0, 0, +7)
+	fmt.Println(today.Day())
+	fmt.Println(today.Month())
 
 	//
 	//name := "Азиз"  // мы к каждой имени говорим с какой буквой заканчивается
