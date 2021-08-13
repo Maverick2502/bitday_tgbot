@@ -99,6 +99,7 @@ func main() {
 	server := app.NewServer(bot, tgBot)
 	go server.NearBDHandler() // и тут дай бота и все
 	server.Init() // ВСЕГДА ВЫЗЫВАЙ ОБРАБОТЧИКОВ:
+
 	bot.ListenAndServe()
 
 
