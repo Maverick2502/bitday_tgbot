@@ -152,7 +152,7 @@ func (s *Server) nearBirthDayHandler(m *tbot.Message) {
 
 func (s *Server) Init() {
 	//	s.bot.Handle("/answer", "42")
-	s.bot.HandleFunc("/timer {seconds}", s.timerHandler)
+	//s.bot.HandleFunc("/timer {seconds}", s.timerHandler)
 	s.bot.HandleFunc("/list", s.listHandler)
 	s.bot.HandleFunc("/near", s.nearBirthDayHandler)
 	s.bot.HandleFunc("/check", s.checkHandler)
